@@ -1,24 +1,42 @@
+{% set version = "0.10.4" %}
+
 package:
   name: xpdacq
-  version: '1.0.1'
+  version: {{ version }}
 
 source:
-  git_rev: master
-  git_url: https://github.com/chiahaoliu/xpdAcq.git
+  git_url: https://github.com/xpdAcq/xpdAcq.git
+  git_rev: {{ version }}
+  git_depth: -1
+
+build:
+  noarch: python
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
-    - python
-    - setuptools
-
+  host:
+    - python >=3.6
+    - pip
   run:
-    - python
+    - python >=3.6
     - numpy
-    - matplotlib
+    - pyyaml
+    - pandas
+    - xlrd
+    - pyfai
+    - ipython
+    - bluesky
+    - xpdan
+    - xpdsim
+    - databroker
+    - ophyd
+    - xpdconf
 
 test:
   imports:
     - xpdacq
 
 about:
-  home: https://github.com/chiahaoliu/xpdAcq
+  home: http://xpdacq.github.io/xpdAcq
+  license_file: LICENSE
