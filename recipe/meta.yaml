@@ -36,6 +36,8 @@ requirements:
 test:
   imports:
     - xpdacq
+    - xpdacq.xpdacq
+    - xpdacq.beamtimeSetup
 
 about:
   home: http://xpdacq.github.io/xpdAcq
