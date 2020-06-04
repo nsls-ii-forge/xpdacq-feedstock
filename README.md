@@ -7,7 +7,7 @@ Package license:
 
 Feedstock license: BSD 3-Clause
 
-Summary: 
+Summary: Python package that aids data acquisition at the NSLS-II XPD and PDF Beamline.
 
 
 

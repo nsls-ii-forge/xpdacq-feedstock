@@ -1,13 +1,13 @@
 {% set version = "0.10.4" %}
+{% set sha256 = "d338bbd18c4c628c65874db587f24c9ae664373c18d11b8c6985ea61b365c582" %}
 
 package:
   name: xpdacq
   version: {{ version }}
 
 source:
-  git_url: https://github.com/xpdAcq/xpdAcq.git
-  git_rev: {{ version }}
-  git_depth: -1
+  url: https://github.com/xpdAcq/xpdAcq/releases/download/{{ version  }}/xpdAcq-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
@@ -40,3 +40,4 @@ test:
 about:
   home: http://xpdacq.github.io/xpdAcq
   license_file: LICENSE
+  summary: Python package that aids data acquisition at the NSLS-II XPD and PDF Beamline.
