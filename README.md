@@ -1,9 +1,9 @@
 About xpdacq
 ============
 
-Home: http://xpdacq.github.io/xpdAcq
+Home: http://xpdacq.github.io
 
-Package license: 
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
