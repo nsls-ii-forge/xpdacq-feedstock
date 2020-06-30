@@ -41,7 +41,8 @@ test:
     - xpdacq.beamtimeSetup
 
 about:
-  home: http://xpdacq.github.io/xpdAcq
+  home: http://xpdacq.github.io
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: Python package that aids data acquisition at the NSLS-II XPD and PDF Beamline.
   dev_url: https://github.com/xpdAcq/xpdAcq
