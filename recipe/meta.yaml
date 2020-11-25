@@ -1,13 +1,13 @@
 {% set name = "xpdAcq" %}
-{% set v = "0.11.0" %}
+{% set version = "0.11.0" %}
 {% set sha256 = "befb9dbdb5fa32ff8a554ee49e238769154ca5d6891b4375f5115dedca50310e" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ v }}
+  version: {{ version }}
 
 source:
-  url: https://github.com/{{ name }}/{{ name }}/releases/download/{{ v }}/{{ name }}-{{ v }}.tar.gz
+  url: https://github.com/{{ name }}/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
