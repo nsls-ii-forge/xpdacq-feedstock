@@ -1,19 +1,19 @@
 {% set name = "xpdAcq" %}
-{% set version = "0.10.4" %}
-{% set sha256 = "d338bbd18c4c628c65874db587f24c9ae664373c18d11b8c6985ea61b365c582" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "540da95204e34b46ec392e21195a876c3fa478988f816022170f1bcc877b19ad" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/{{ name }}/{{ name }}/releases/download/{{ version  }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/{{ name }}/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
