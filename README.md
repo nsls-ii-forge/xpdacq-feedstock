@@ -5,11 +5,13 @@ Home: http://xpdacq.github.io
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/xpdacq-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python package that aids data acquisition at the NSLS-II XPD and PDF Beamline.
 
+Development: https://github.com/xpdAcq/xpdAcq
 
+Documentation: http://xpdacq.github.io/xpdAcq
 
 Current build status
 ====================
