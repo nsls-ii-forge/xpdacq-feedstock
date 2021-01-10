@@ -1,6 +1,6 @@
 {% set name = "xpdAcq" %}
-{% set version = "0.11.0" %}
-{% set sha256 = "540da95204e34b46ec392e21195a876c3fa478988f816022170f1bcc877b19ad" %}
+{% set version = "0.12.0" %}
+{% set sha256 = "f4e7beb7109a87426025009b0c5ec4667fdb7a46f199d7432b1e7d4bf028faa8" %}
 
 package:
   name: {{ name|lower }}
@@ -25,11 +25,11 @@ requirements:
     - databroker
     - ipython
     - numpy
+    - openpyxl
     - ophyd
     - pandas
     - pyfai
     - pyyaml
-    - xlrd
     - xpdan
     - xpdconf
     - xpdsim
