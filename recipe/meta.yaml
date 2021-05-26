@@ -30,7 +30,6 @@ requirements:
     - pandas
     - pyfai
     - pyyaml
-    - pyopencl
     - xpdan
     - xpdconf
     - xpdsim
