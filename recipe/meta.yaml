@@ -1,6 +1,6 @@
 {% set name = "xpdAcq" %}
-{% set version = "0.12.0" %}
-{% set sha256 = "f4e7beb7109a87426025009b0c5ec4667fdb7a46f199d7432b1e7d4bf028faa8" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "a020d7a409364fed269809554896b725b56a02608362af8f5e4ebb4dce85e707" %}
 
 package:
   name: {{ name|lower }}
@@ -30,7 +30,6 @@ requirements:
     - pandas
     - pyfai
     - pyyaml
-    - xpdan
     - xpdconf
     - xpdsim
 
